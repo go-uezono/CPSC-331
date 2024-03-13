@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1710318223.8656 "c:/Users/gouez/OneDrive/Desktop/School/CPSC 331/Master Notes.tex" "Master Notes.pdf" "Master Notes" 1710318225.59317 0
+["pdflatex"] 1710350261.24241 "c:/Users/gouez/OneDrive/Documents/GitHub/uofc-notes/CPSC 331/Master Notes.tex" "Master Notes.pdf" "Master Notes" 1710350262.86985 0
   "C:/Users/gouez/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1710315377 123032 c381f7a15c0a432b0691ab228c2c477b ""
   "C:/Users/gouez/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1710317832 24233144 a1efdddfc178c9c846c3ba2802ed2c32 ""
   "C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -178,14 +178,14 @@
   "C:/Users/gouez/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/gouez/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/gouez/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
-  "Master Notes.aux" 1710318225 3491 d1ae54a9267030ce8dad900fa2f5d037 "pdflatex"
-  "Master Notes.lof" 1710318225 87 58585d97697b9505730f39a927bcfac4 "pdflatex"
-  "Master Notes.lot" 1710318225 87 58585d97697b9505730f39a927bcfac4 "pdflatex"
-  "Master Notes.out" 1710318225 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Master Notes.tex" 1710318222 2026 b97c7d78ffe67e323784def026e8487d ""
-  "Master Notes.toc" 1710318225 720 ef24ad0c5fd4b1f0432a55cae09144d3 "pdflatex"
-  "Structure.tex" 1710318224 955 8b313dada183a71b21debbd302474683 ""
-  "c:/Users/gouez/OneDrive/Desktop/School/CPSC 331/Master Notes.tex" 1710318222 2026 b97c7d78ffe67e323784def026e8487d ""
+  "Master Notes.aux" 1710350262 3518 9f6d56ff8f86a82bd3c1998cfc8bca34 "pdflatex"
+  "Master Notes.lof" 1710350262 87 58585d97697b9505730f39a927bcfac4 "pdflatex"
+  "Master Notes.lot" 1710350262 87 58585d97697b9505730f39a927bcfac4 "pdflatex"
+  "Master Notes.out" 1710350262 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Master Notes.tex" 1710350260 2040 3133e179fc6fd8d2946264fe466e3a1d ""
+  "Master Notes.toc" 1710350262 720 395319317d20fd01854720a26c065d6f "pdflatex"
+  "Structure.tex" 1710350080 955 8b313dada183a71b21debbd302474683 ""
+  "c:/Users/gouez/OneDrive/Documents/GitHub/uofc-notes/CPSC 331/Master Notes.tex" 1710350260 2040 3133e179fc6fd8d2946264fe466e3a1d ""
   (generated)
   "Master Notes.aux"
   "Master Notes.lof"
