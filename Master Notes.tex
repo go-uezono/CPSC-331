@@ -1,0 +1,100 @@
+\documentclass[10pt, 
+a4paper, 
+oneside, 
+headinclude, footinclude, 
+BCOR5mm]
+{scrartcl}
+
+\input{Structure.tex}
+\hyphenation{Fortran hy-phen-ation}
+
+% Title and Authors
+\title{\normalfont\spacedallcaps{CPSC 331: Data Structures, Algorithms, and their Analysis}}
+\author{\spacedlowsmallcaps{Go Uezono}}
+
+\begin{document}
+
+% Headers
+\renewcommand{\sectionmark}[1]{\markright{\spacedlowsmallcaps{#1}}}
+\lehead{\mbox{\llap{\small\thepage\kern1em\color{halfgray} \vline}\color{halfgray}\hspace{0.5em}\rightmark\hfil}}
+
+\pagestyle{scrheadings}
+
+% Table of Contents
+\maketitle
+\setcounter{tocdepth}{2}
+\tableofcontents
+\listoffigures
+\listoftables
+
+% Abstract
+\section*{Abstract}
+Will be deleted.
+
+\section{Introduction}
+
+Test text
+
+Test math notation: $\cos\pi=-1$ and $\alpha\omega$
+\newpage
+
+% Methods
+\section{Methods}
+\begin{enumerate}
+    \item 1st item in list
+    \item 2nd item 
+    \item 3rd
+\end{enumerate}
+
+% Subsections
+\subsection{Test sub}
+
+\paragraph{Description}
+\paragraph{2nd Description}
+
+\subsection{Math subsection}
+
+\begin{equation}
+    \cos^3 \theta = \frac{1}{4}\cos\theta + \frac{3}{4}\cos 3\theta
+    \label{eq:refname2}
+\end{equation}
+
+\begin{definition}[Gauss]
+    To a mathematician, it is obvious that
+    $\int_{-\inf}^{+\inf} e^{-x^2}\, dx=\sqrt{pi}$.
+\end{definition}
+
+\begin{theorem}[Red and Black Trees]
+    Red trees are better than black trees.
+\end{theorem}
+
+\begin{proof}
+    We have that $\log(1)^2 = 2\log(1)$.
+    We also have that $\log(-1)^2 = \log(1) = 0$.
+    Then, $2\log(-1) = 0$, from which the proof.
+\end{proof}
+
+% Results and discussion
+\section{Results and Discussion}
+
+\subsection{Subsection}
+Test subsec
+
+\subsection{Subsubsection}
+Test sub
+
+\begin{description}
+    \item[Word] Definition
+    \item[Concept] Explanation
+    \item[Idea] Text
+\end{description}
+
+Test Test
+
+\begin{itemize}[noitemsep]
+    \item First
+    \item Second
+    \item Third
+\end{itemize}
+
+\end{document}

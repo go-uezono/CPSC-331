@@ -1,0 +1,38 @@
+% Required packages
+\usepackage[
+    nochapters, beramono, eulermath, pdfspacing, dottedtoc,
+]{classicthesis}
+\usepackage{arsclassica}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{}
+\usepackage{enumitem}
+\usepackage{lipsum}
+\usepackage{subfig}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{varioref}
+
+% Theorem Styles
+
+% Style used for definitions and examples
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+% Style used for theorems, lemmas, propositions, corollaries
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+
+% Style used for remarks and notes
+\theoremstyle{remark}
+
+% Hyperlinks
+\hypersetup{
+colorlinks=true, breaklinks=true, bookmarksnumbered, urlcolor=webbrown, 
+linkcolor=RoyalBlue, citecolor=webgreen,
+pdfauthor={\textcopyright},
+pdfsubject={},
+pdfkeywords={},
+pdfcreator={pdfLaTeX},
+pdfproducer={LaTeX with hyperref and ClassicThesis}
+}
