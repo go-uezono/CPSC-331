@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}{Algorithmic Analysis}}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}{Loop Invariants}}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}{Bound Functions}}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}{Data Structures}}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}{Lists}}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}{Stacks}}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}{Queues}}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}{Binary Search Trees}}{2}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}{Red and Black Trees}}{3}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}{Rotational Properties}}{3}{subsubsection.2.5.1}%
+\contentsline {section}{\numberline {3}{Methods}}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}{Test sub}}{4}{subsection.3.1}%
+\contentsline {paragraph}{{Description}}{4}{paragraph*.1}%
+\contentsline {paragraph}{{2nd Description}}{4}{paragraph*.2}%
+\contentsline {subsection}{\numberline {3.2}{Math subsection}}{4}{subsection.3.2}%
+\contentsline {section}{\numberline {4}{Results and Discussion}}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}{Subsection}}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}{Subsubsection}}{4}{subsection.4.2}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

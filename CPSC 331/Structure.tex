@@ -12,16 +12,25 @@
 \usepackage{subfig}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{varioref}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{tcolorbox}
+
+% Adjust title size
+\titleformat*{\section}{\color{RoyalBlue}\LARGE}
+\titleformat*{\subsection}{\color{gray}\Large}
+\titleformat*{\subsubsection}{\color{purple}}
+\titleformat*{\paragraph}{\large}
 
 % Theorem Styles
 
 % Style used for definitions and examples
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}
+\newtheorem*{definition}{Definition}
 
 % Style used for theorems, lemmas, propositions, corollaries
 \theoremstyle{plain}
-\newtheorem{theorem}{Theorem}
+\newtheorem{theorem}{Theorem}[section]
 
 % Style used for remarks and notes
 \theoremstyle{remark}
