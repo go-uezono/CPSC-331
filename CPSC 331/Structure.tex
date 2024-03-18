@@ -14,12 +14,12 @@
 \usepackage{varioref}
 \usepackage{titlesec}
 \usepackage{color}
-\usepackage{tcolorbox}
+\usepackage[linesnumbered, lined, ruled, commentsnumbered]{algorithm2e}
 
 % Adjust title size
 \titleformat*{\section}{\color{RoyalBlue}\LARGE}
-\titleformat*{\subsection}{\color{gray}\Large}
-\titleformat*{\subsubsection}{\color{purple}}
+\titleformat*{\subsection}{\color{black}\Large}
+\titleformat*{\subsubsection}{\color{gray}}
 \titleformat*{\paragraph}{\large}
 
 % Theorem Styles
@@ -31,9 +31,17 @@
 % Style used for theorems, lemmas, propositions, corollaries
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}
 
 % Style used for remarks and notes
 \theoremstyle{remark}
+
+% Set up algorithm 
+\SetAlgoLined
+\SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
+\SetKwFunction{Union}{Union}\SetKwData{FindCompress}{FindCompress}
+\SetKwInOut{In}{input}\SetKwInOut{Out}{output}
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{purple}{#1}}
 
 % Hyperlinks
 \hypersetup{
