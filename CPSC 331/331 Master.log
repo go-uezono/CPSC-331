@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.13)  17 MAR 2024 21:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.13)  21 MAR 2024 19:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -919,17 +919,17 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
  [2] [3]
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 120.
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 119.
  (C:\Users\gouez\AppData\Local\Programs\MiKTeX\tex/latex/bera\t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 120.
+(Font)              scaled to size 8.50006pt on input line 119.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [4] [5] [6] [7] (331 Master.aux)
+ [4] [5] [6] [7] [8] (331 Master.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -938,17 +938,17 @@ Package rerunfilecheck Info: File `"331 Master".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22294 strings out of 474435
- 418987 string characters out of 5741933
- 1943190 words of memory out of 5000000
- 44154 multiletter control sequences out of 15000+600000
+ 22300 strings out of 474435
+ 419046 string characters out of 5741933
+ 1944190 words of memory out of 5000000
+ 44157 multiletter control sequences out of 15000+600000
  694712 words of font info for 185 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,22n,109p,10968b,655s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,109p,10968b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/euex10.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplbj8a.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvmr8a.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonab.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonar.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "331 Master.pdf" (7 pages, 212763 bytes).
+Output written on "331 Master.pdf" (8 pages, 215911 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
- 26233 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
+ 26249 words of extra memory for PDF output out of 29859 (max. 10000000)
 

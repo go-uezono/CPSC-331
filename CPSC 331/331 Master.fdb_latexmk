@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1710732167.17893 "c:/Users/gouez/OneDrive/Documents/GitHub/uofc-notes/CPSC 331/331 Master.tex" "331 Master.pdf" "331 Master" 1710732169.00061 0
-  "331 Master.aux" 1710732168 7571 36a99a47725a21bfed155bed90ad78d5 "pdflatex"
-  "331 Master.lof" 1710732168 87 58585d97697b9505730f39a927bcfac4 "pdflatex"
-  "331 Master.lot" 1710732168 87 58585d97697b9505730f39a927bcfac4 "pdflatex"
-  "331 Master.out" 1710732168 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "331 Master.tex" 1710732168 7810 0de8d346c7bf9d206e640efcce5a5f96 ""
-  "331 Master.toc" 1710732168 1636 a066bdb8e6083fae19e1723d42518995 "pdflatex"
+["pdflatex"] 1711069565.21411 "c:/Users/gouez/OneDrive/Documents/GitHub/uofc-notes/CPSC 331/331 Master.tex" "331 Master.pdf" "331 Master" 1711069566.99911 0
+  "331 Master.aux" 1711069566 8251 a43ac199ba0e35c4309006abfea89d98 "pdflatex"
+  "331 Master.lof" 1711069566 87 58585d97697b9505730f39a927bcfac4 "pdflatex"
+  "331 Master.lot" 1711069566 87 58585d97697b9505730f39a927bcfac4 "pdflatex"
+  "331 Master.out" 1711069566 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "331 Master.tex" 1711069564 8328 1ddb07a08d35cd22587e77287c0948e2 ""
+  "331 Master.toc" 1711069566 1787 832d13a50c45d8747ceebe238baafad1 "pdflatex"
   "C:/Users/gouez/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1710717167 123032 c381f7a15c0a432b0691ab228c2c477b ""
   "C:/Users/gouez/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1710317832 24233144 a1efdddfc178c9c846c3ba2802ed2c32 ""
   "C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -195,7 +195,7 @@
   "C:/Users/gouez/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/gouez/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "Structure.tex" 1710731999 1601 2c1974a1ed1fd85d8933cdd0493f0cf9 ""
-  "c:/Users/gouez/OneDrive/Documents/GitHub/uofc-notes/CPSC 331/331 Master.tex" 1710732168 7810 0de8d346c7bf9d206e640efcce5a5f96 ""
+  "c:/Users/gouez/OneDrive/Documents/GitHub/uofc-notes/CPSC 331/331 Master.tex" 1711069564 8328 1ddb07a08d35cd22587e77287c0948e2 ""
   (generated)
   "331 Master.aux"
   "331 Master.lof"

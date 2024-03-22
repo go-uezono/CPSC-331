@@ -10,12 +10,14 @@
 \contentsline {subsubsection}{\numberline {2.5.1}{Properties}}{3}{subsubsection.2.5.1}%
 \contentsline {subsubsection}{\numberline {2.5.2}{Rotational Properties}}{4}{subsubsection.2.5.2}%
 \contentsline {subsubsection}{\numberline {2.5.3}{Insertion}}{5}{subsubsection.2.5.3}%
-\contentsline {section}{\numberline {3}{Methods}}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}{Test sub}}{6}{subsection.3.1}%
-\contentsline {paragraph}{{Description}}{6}{paragraph*.4}%
-\contentsline {paragraph}{{2nd Description}}{6}{paragraph*.5}%
-\contentsline {subsection}{\numberline {3.2}{Math subsection}}{6}{subsection.3.2}%
-\contentsline {section}{\numberline {4}{Results and Discussion}}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}{Subsection}}{6}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}{Subsubsection}}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {2.6}{Heaps}}{6}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}{Hash Table}}{7}{subsection.2.7}%
+\contentsline {section}{\numberline {3}{Methods}}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}{Test sub}}{7}{subsection.3.1}%
+\contentsline {paragraph}{{Description}}{7}{paragraph*.4}%
+\contentsline {paragraph}{{2nd Description}}{7}{paragraph*.5}%
+\contentsline {subsection}{\numberline {3.2}{Math subsection}}{7}{subsection.3.2}%
+\contentsline {section}{\numberline {4}{Results and Discussion}}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}{Subsection}}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}{Subsubsection}}{7}{subsection.4.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
