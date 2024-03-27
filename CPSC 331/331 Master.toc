@@ -13,15 +13,18 @@
 \contentsline {subsubsection}{\numberline {3.2.3}{Insertion}}{5}{subsubsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.3}{Heaps}}{6}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}{Priority Queues}}{6}{subsubsection.3.3.1}%
+\contentsline {paragraph}{{\textbf {Priority Queue Implementations}}}{6}{paragraph*.3}%
 \contentsline {subsubsection}{\numberline {3.3.2}{Properties}}{7}{subsubsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.4}{Hash Table}}{8}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}{Graphs}}{9}{subsection.3.5}%
-\contentsline {section}{\numberline {4}{Methods}}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}{Test sub}}{10}{subsection.4.1}%
-\contentsline {paragraph}{{Description}}{10}{paragraph*.4}%
-\contentsline {paragraph}{{2nd Description}}{10}{paragraph*.5}%
-\contentsline {subsection}{\numberline {4.2}{Math subsection}}{10}{subsection.4.2}%
-\contentsline {section}{\numberline {5}{Results and Discussion}}{10}{section.5}%
-\contentsline {subsection}{\numberline {5.1}{Subsection}}{10}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}{Subsubsection}}{10}{subsection.5.2}%
+\contentsline {paragraph}{{\textbf {Heap Properties}}}{7}{paragraph*.4}%
+\contentsline {paragraph}{{\textbf {MaxHeap Class}}}{7}{paragraph*.5}%
+\contentsline {subsection}{\numberline {3.4}{Hash Table}}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}{Graphs}}{10}{subsection.3.5}%
+\contentsline {section}{\numberline {4}{Methods}}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}{Test sub}}{11}{subsection.4.1}%
+\contentsline {paragraph}{{Description}}{11}{paragraph*.7}%
+\contentsline {paragraph}{{2nd Description}}{11}{paragraph*.8}%
+\contentsline {subsection}{\numberline {4.2}{Math subsection}}{11}{subsection.4.2}%
+\contentsline {section}{\numberline {5}{Results and Discussion}}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}{Subsection}}{11}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}{Subsubsection}}{11}{subsection.5.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

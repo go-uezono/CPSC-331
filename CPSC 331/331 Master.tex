@@ -200,7 +200,7 @@ To ensure we preserve the {\color{red}red}-black properties,
     }
 \end{lstlisting}
 \BlankLine
-Priority Queue Implementations:
+\paragraph{\textbf{Priority Queue Implementations}}
 \begin{itemize}
     \item \textbf{Lists}
     \begin{itemize}
@@ -256,7 +256,7 @@ A heap is a \textbf{complete} binary tree that satisfies the Heap Property:
 \end{proof}
 \BlankLine
 
-\underbar{Two types of Heap Properties}:
+\paragraph{\textbf{Heap Properties}}
 \begin{itemize}
     \item \textbf{Min Heap Property}
     \begin{itemize}
@@ -271,6 +271,54 @@ A heap is a \textbf{complete} binary tree that satisfies the Heap Property:
     \end{itemize}
     GIVE EXAMPLE
 \end{itemize}
+
+
+\paragraph{\textbf{MaxHeap Class}}
+Similar to the Queue ADT, differences in the enqueue and dequeue functions to maintain \textbf{heap} property
+\begin{lstlisting}
+    public class MaxHeap<T> {
+        private T[] queue;
+        private int size;
+
+        public MaxHeap(Class<T> clazz, int maxSize) {
+            queue = (T[]) Array.newInstance(clazz, maxSize);
+            size = 0;
+        }
+        public boolean isEmpty() {
+            return (size == 0);
+        }
+        public boolean isFull() {
+            return (size == queue.lenght);
+        }
+    }
+    // enqueue()/dequeue() functions shown later
+\end{lstlisting}
+\begin{definition}
+    \textit{Enqueue}
+    \begin{itemize}
+        \item Must keep the tree \textbf{complete}
+        \item Must keep the \textbf{max heap} property
+    \end{itemize}
+    \newpage
+    \textbf{Enqueue} code:
+    \begin{lstlisting}
+        public void enqueue(T item) {
+            queue[size] = item;
+
+            // Fix heap
+            int loc = size;
+            int parent = (loc - 1)/2;
+            while (loc > 0 && queue[loc].compareTo(queue[parent]) > 0) {
+                swap(loc, parent);
+                loc = parent;
+                parent = (loc - 1)/2;
+            }
+            size++;
+        }
+
+    \end{lstlisting}
+\end{definition}
+
 
 \newpage
 
