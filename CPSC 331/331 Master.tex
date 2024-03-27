@@ -33,22 +33,31 @@ BCOR5mm]
 \subsection{Loop Invariants}
 \subsection{Bound Functions}
 
-%Data Structures%
-\section{Data Structures}
+%-----------------------------------------------------------------------------------%
+%Elementary Data Structures%
+\section{Elementary Data Structures}
 
+%-----------------------------------------------------------------------------------%
 %--Lists--%
 \subsection{Lists}
 
+%-----------------------------------------------------------------------------------%
 %--Stacks--%
 \subsection{Stacks}
 
+%-----------------------------------------------------------------------------------%
 %--Queues--%
 \subsection{Queues}
 
+%-----------------------------------------------------------------------------------%
+%Data Structures%
+\section{Data Structures}
 %--Binary Search--%
 \subsection{Binary Search Trees}
 
 \newpage
+
+%-----------------------------------------------------------------------------------%
 %--Red and Black Trees--%
 \subsection{Red and Black Trees}
 %----Properties----%
@@ -95,6 +104,7 @@ The following \textbf{lemma} shows why red-black trees make good search trees:
 \end{proof}
 
 \newpage
+
 %----Rotations----%
 \subsubsection{Rotational Properties}
 Search operations \textit{TREE-INSERT} and \textit{TREE-DELETE} take $O(\log n)$ time. Since modifications are done to the tree, we must change the color of some of the nodes.
@@ -131,6 +141,7 @@ Search operations \textit{TREE-INSERT} and \textit{TREE-DELETE} take $O(\log n)$
 \end{algorithm}
 
 \newpage 
+
 %----Insertion----%
 \subsubsection{Insertion}
 Inserting a node can be done in $O(\log n)$ time. Below is a pseudo-code that shows how insertion \textit{RB-INSERT} works:
@@ -161,30 +172,120 @@ Inserting a node can be done in $O(\log n)$ time. Below is a pseudo-code that sh
 \end{algorithm}
 
 To ensure we preserve the {\color{red}red}-black properties, 
-
 \newpage
 
+%-----------------------------------------------------------------------------------%
 %--Heaps--%
 \subsection{Heaps}
-A \textbf{heap} is a complete binary tree.
+
+%----Priority Queues----%
+\subsubsection{Priority Queues} \label{subsubsec:prio-q}
 \begin{itemize}
-    \item It is of height \textit{h} and contains \textit{n} nodes
+    \item Priority queues are \textbf{NOT} FIFO
+    \item These queues are interested in removing items (dequeue) with the \textbf{highest priority}
+    \item Assume that higher priority value (HPV) entails higher priority
+    \begin{itemize}
+        \item Not true in general (UNIX OS; smaller PV = higher priority)
+    \end{itemize}
+    \item Similar operations as the standard Queue ADT:
+\end{itemize}
+
+\begin{lstlisting}
+    // Queue ADT
+    public interface QueueADT<T> {
+        public void enqueue(T item);
+        public T dequeue(); // different implementation
+        public boolean isEmpty();
+        public boolean isFull();
+    }
+\end{lstlisting}
+\BlankLine
+Priority Queue Implementations:
+\begin{itemize}
+    \item \textbf{Lists}
+    \begin{itemize}
+        \item \textbf{Sorted} list by PV with \underbar{array implementation}
+        \begin{itemize}
+            \item \textit{Ascending order}: Remove \textbf{last} item
+            \item \textit{Dequeue}: $O(1)$, \textit{n\textsuperscript{th}} element of the array to be removed
+            \item \textit{Enqueue}: $O(n)$, needs to be sorted after enqueue
+        \end{itemize}
+        \item \textbf{Sorted} list by PV with \underbar{linked-list implementation} 
+        \begin{itemize}
+            \item \textit{Descending order}: Remove \textbf{first} item
+            \item \textit{Ascending order}: Circular list implementation
+            \item \textit{Dequeue}: $O(1)$
+            \item \textit{Enqueue}: $O(n)$
+        \end{itemize}
+        \item \textbf{Unsorted} list
+        \begin{itemize}
+            \item \textit{Dequeue}: $O(n)$
+            \item \textit{Enqueue}: $O(1)$
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{BST}
+    \begin{itemize}
+        \item \textit{Dequeue}: $O(\log(n))$ average-case, $O(n)$ worst-case 
+        \item \textit{Enqueue}: $O(\log(n))$ average-case, $O(n)$ worst-case 
+    \end{itemize}
+    \item \textbf{Heaps}
+    \begin{itemize}
+        \item \textit{Dequeue}: $O(\log(n))$ worst-case 
+        \item \textit{Enqueue}: $O(\log(n))$ worst-case 
+    \end{itemize}
+\end{itemize}
+\newpage
+
+%----Properties----%
+\subsubsection{Properties}
+A heap is a \textbf{complete} binary tree that satisfies the Heap Property:
+\begin{itemize}
     \item Each node of a tree corresponds to an element of an array
     \begin{itemize}
-        \item They are alawys stored contiguously, meaning there are no blanks inbetween indices, and if there are blanks, they are on the rightside of the array
-    \end{itemize} 
+        \item Always stored \textbf{contiguously}
+        \begin{itemize}
+            \item  If there are blanks, they are on the rightside of the array
+            \item  Otherwise, no blanks inbetween indices
+        \end{itemize}
+    \end{itemize}
+    \item It is of height \textit{h} and contains \textit{n} nodes
 \end{itemize}
 
 \begin{proof}
     Height \textit{h}
 \end{proof}
+\BlankLine
+
+\underbar{Two types of Heap Properties}:
+\begin{itemize}
+    \item \textbf{Min Heap Property}
+    \begin{itemize}
+        \item Every node has a value $\leq$ than the value of its children
+        \item Root of any subtree has the \textit{minimum} value in the subtree    
+    \end{itemize}
+    GIVE EXAMPLE
+    \item \textbf{Max Heap Property}
+    \begin{itemize}
+        \item Every node has a value $\geq$ than the value of its children
+        \item Root of any subtree has the \textit{maximum} value in the subtree
+    \end{itemize}
+    GIVE EXAMPLE
+\end{itemize}
 
 \newpage
+
+%-----------------------------------------------------------------------------------%
 %--Hash Table--%
 \subsection{Hash Table}
 
+\newpage
+
+%-----------------------------------------------------------------------------------%
+%--Graphs--%
+\subsection{Graphs}
 
 
+\newpage
 %%%%%%%%%%%%%%% DELETE %%%%%%%%%%%%%%%
 % Methods
 \section{Methods}

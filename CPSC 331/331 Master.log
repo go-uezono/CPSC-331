@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.13)  21 MAR 2024 19:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.13)  26 MAR 2024 21:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -752,14 +752,40 @@ Package: relsize 2013/03/29 ver 4.1
 \c@algocf=\count312
 \algocf@algoframe=\box65
 \algocf@algobox=\box66
-)
-\c@theorem=\count313
-\c@lemma=\count314
+) (C:\Users\gouez\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count313
+\lst@gtempboxa=\box67
+\lst@token=\toks35
+\lst@length=\count314
+\lst@currlwidth=\dimen193
+\lst@column=\count315
+\lst@pos=\count316
+\lst@lostspace=\dimen194
+\lst@width=\dimen195
+\lst@newlines=\count317
+\lst@lineno=\count318
+\lst@maxwidth=\dimen196
+ (C:\Users\gouez\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
+) (C:\Users\gouez\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+\c@lstnumber=\count319
+\lst@skipnumbers=\count320
+\lst@framebox=\box68
+) (C:\Users\gouez\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2024/02/21 1.10 listings configuration
+))
+Package: listings 2024/02/21 1.10 (Carsten Heinz)
+\c@theorem=\count321
+\c@lemma=\count322
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 43.
-Package hyperref Info: Option `colorlinks' set `true' on input line 55.
-Package hyperref Info: Option `breaklinks' set `true' on input line 55.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 55.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 44.
+ (C:\Users\gouez\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 78.
+Package hyperref Info: Option `breaklinks' set `true' on input line 78.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 78.
 ) (331 Master.aux)
 \openout1 = `"331 Master.aux"'.
 
@@ -792,17 +818,17 @@ Package scrbase Info: activating english \refname on input line 15.
 Package scrbase Info: activating english \indexname on input line 15.
  (C:\Users\gouez\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count315
-\scratchdimen=\dimen193
-\scratchbox=\box67
-\nofMPsegments=\count316
-\nofMParguments=\count317
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count318
-\MPscratchDim=\dimen194
-\MPnumerator=\count319
-\makeMPintoPDFobject=\count320
-\everyMPtoPDFconversion=\toks36
+\scratchcounter=\count323
+\scratchdimen=\dimen197
+\scratchbox=\box69
+\nofMPsegments=\count324
+\nofMParguments=\count325
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count326
+\MPscratchDim=\dimen198
+\MPnumerator=\count327
+\makeMPintoPDFobject=\count328
+\everyMPtoPDFconversion=\toks37
 ) (C:\Users\gouez\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -828,6 +854,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 15.
  (331 Master.out) (331 Master.out)
@@ -846,8 +873,12 @@ Class scrartcl Info: loading recommended package `bookmark'.
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (C:\Users\gouez\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count321
+\BKM@id=\count329
 ))
+\c@lstlisting=\count330
+Package tocbasic Info: omitting babel extension for `lol'
+(tocbasic)             because of missing \bbl@set@language on input line 15.
+\scr@dte@lstlisting@maxnumwidth=\skip135
 LaTeX Font Info:    Trying to load font information for T1+iwona on input line 25.
  (C:\Users\gouez\AppData\Local\Programs\MiKTeX\tex/latex/iwona\t1iwona.fd
 File: t1iwona.fd 2008/07/22 v0.995 font definition file for T1/iwona (MW)
@@ -919,17 +950,23 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
  [2] [3]
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 119.
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 129.
  (C:\Users\gouez\AppData\Local\Programs\MiKTeX\tex/latex/bera\t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 119.
+(Font)              scaled to size 8.50006pt on input line 129.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [4] [5] [6] [7] [8] (331 Master.aux)
+ [4] [5]
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 7.65005pt on input line 193.
+LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 209.
+ (C:\Users\gouez\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
+) [6] [7] [8] [9] [10] [11] (331 Master.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -938,17 +975,17 @@ Package rerunfilecheck Info: File `"331 Master".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22300 strings out of 474435
- 419046 string characters out of 5741933
- 1944190 words of memory out of 5000000
- 44157 multiletter control sequences out of 15000+600000
- 694712 words of font info for 185 fonts, out of 8000000 for 9000
+ 24077 strings out of 474435
+ 443506 string characters out of 5741933
+ 1954190 words of memory out of 5000000
+ 45896 multiletter control sequences out of 15000+600000
+ 700084 words of font info for 193 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,22n,109p,10968b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,22n,109p,10968b,1200s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/euex10.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplbj8a.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/fpl/fplrc8a.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/bera/fvmr8a.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonab.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonar.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/gouez/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "331 Master.pdf" (8 pages, 215911 bytes).
+Output written on "331 Master.pdf" (11 pages, 229535 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
- 26249 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 28313 words of extra memory for PDF output out of 29859 (max. 10000000)
 

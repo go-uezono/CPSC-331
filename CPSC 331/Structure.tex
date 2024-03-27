@@ -15,6 +15,7 @@
 \usepackage{titlesec}
 \usepackage{color}
 \usepackage[linesnumbered, lined, ruled, commentsnumbered]{algorithm2e}
+\usepackage{listings}
 
 % Adjust title size
 \titleformat*{\section}{\color{RoyalBlue}\LARGE}
@@ -36,12 +37,34 @@
 % Style used for remarks and notes
 \theoremstyle{remark}
 
-% Set up algorithm 
+% Set up pseudocode 
 \SetAlgoLined
 \SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
 \SetKwFunction{Union}{Union}\SetKwData{FindCompress}{FindCompress}
 \SetKwInOut{In}{input}\SetKwInOut{Out}{output}
 \newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{purple}{#1}}
+
+% Set up code
+\definecolor{dkgreen}{rgb}{0.5,0.5,0.5}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.5,0.5,0.5}
+
+\lstset{frame=tb, 
+language=Java, 
+aboveskip=3mm, 
+belowskip=3mm, 
+showstringspaces=false,
+columns=flexible,
+basicstyle={\small\ttfamily},
+numbers=none,
+numberstyle=\tiny\color{gray},
+keywordstyle=\color{blue},
+commentstyle=\color{dkgreen},
+stringstyle=\color{mauve},
+breaklines=true,
+breakatwhitespace=true,
+tabsize=3
+}
 
 % Hyperlinks
 \hypersetup{
