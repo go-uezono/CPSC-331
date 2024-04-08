@@ -298,6 +298,12 @@ Similar to the Queue ADT, differences in the enqueue and dequeue functions to ma
     \begin{itemize}
         \item Must keep the tree \textbf{complete}
         \item Must keep the \textbf{max heap} property
+        \item \textbf{Complexity of \textit{Enqueue}}
+        \begin{itemize}
+            \item \textit{Worst-case}: added node percolates from leaf to root
+            \item Since the tree is \textbf{complete}, height is $O(\log(n))$
+            \item Hence, \textbf{enqueue} is $O(\log(n))$
+        \end{itemize}
     \end{itemize}
     \newpage
     \textbf{Enqueue} code:
@@ -334,6 +340,11 @@ Similar to the Queue ADT, differences in the enqueue and dequeue functions to ma
 
 
 \newpage
+
+%-----------------------------------------------------------------------------------%
+%Shortest Path%
+%--Dijkstra's Algorithm--%
+\subsection{Dijkstra's Algorithm}
 %%%%%%%%%%%%%%% DELETE %%%%%%%%%%%%%%%
 % Methods
 \section{Methods}

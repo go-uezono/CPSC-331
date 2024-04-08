@@ -19,6 +19,7 @@
 \contentsline {paragraph}{{\textbf {MaxHeap Class}}}{7}{paragraph*.5}%
 \contentsline {subsection}{\numberline {3.4}{Hash Table}}{9}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}{Graphs}}{10}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}{Dijkstra's Algorithm}}{11}{subsection.3.6}%
 \contentsline {section}{\numberline {4}{Methods}}{11}{section.4}%
 \contentsline {subsection}{\numberline {4.1}{Test sub}}{11}{subsection.4.1}%
 \contentsline {paragraph}{{Description}}{11}{paragraph*.7}%
