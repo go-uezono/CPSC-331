@@ -30,6 +30,7 @@ BCOR5mm]
 \newpage
 %Algorithmic Analysis%
 \section{Algorithmic Analysis}
+\subsection{Mathematical Induction}
 \subsection{Loop Invariants}
 \subsection{Bound Functions}
 
@@ -272,7 +273,7 @@ A heap is a \textbf{complete} binary tree that satisfies the Heap Property:
     GIVE EXAMPLE
 \end{itemize}
 
-
+%----MaxHeap Class----%
 \paragraph{\textbf{MaxHeap Class}}
 Similar to the Queue ADT, differences in the enqueue and dequeue functions to maintain \textbf{heap} property
 \begin{lstlisting}
@@ -288,11 +289,13 @@ Similar to the Queue ADT, differences in the enqueue and dequeue functions to ma
             return (size == 0);
         }
         public boolean isFull() {
-            return (size == queue.lenght);
+            return (size == queue.length);
         }
     }
     // enqueue()/dequeue() functions shown later
 \end{lstlisting}
+
+%----Enqueue----%
 \begin{definition}
     \textit{Enqueue}
     \begin{itemize}
@@ -306,7 +309,7 @@ Similar to the Queue ADT, differences in the enqueue and dequeue functions to ma
         \end{itemize}
     \end{itemize}
     \newpage
-    \textbf{Enqueue} code:
+    Enqueue:
     \begin{lstlisting}
         public void enqueue(T item) {
             queue[size] = item;
@@ -321,30 +324,123 @@ Similar to the Queue ADT, differences in the enqueue and dequeue functions to ma
             }
             size++;
         }
-
     \end{lstlisting}
+    Correctness: \textbf{Loop Invariant} for Enqueue
+    \begin{proof}
+        
+    \end{proof}
 \end{definition}
 
+%----Dequeue----%
+\begin{definition}
+    \textit{Dequeue}
+    \begin{itemize}
+        \item Must keep the tree \textbf{complete}
+        \item Must keep the \textbf{max heap} property 
+        \item \textbf{Complexity of \textit{Dequeue}}
+        \begin{itemize}
+            \item Deleted root "hole" always sinks to a leaf
+            \item Since the tree is complete, height is $O(\log(n))$
+            \item Hence, \textbf{dequeue} is $O(\log(n))$
+        \end{itemize}
+    \end{itemize}
+    \textit{Dequeue}:
+    \begin{lstlisting}
+        public T dequeue() {
+            T max = queue[0];
+            queue[0] = queue[size - 1];
+            sink(0);
+            queue[size - 1] = null;
+            size--;
+            return max;
+        }
+    \end{lstlisting}
+    Correctness: \textbf{Bound Function} for Dequeue
+    \begin{proof}
+        Prove that sink() maintains heap property
+    \end{proof}
+\end{definition}
 
 \newpage
-
 %-----------------------------------------------------------------------------------%
 %--Hash Table--%
 \subsection{Hash Table}
 
 \newpage
-
 %-----------------------------------------------------------------------------------%
 %--Graphs--%
 \subsection{Graphs}
 
 
 \newpage
-
 %-----------------------------------------------------------------------------------%
-%Shortest Path%
 %--Dijkstra's Algorithm--%
 \subsection{Dijkstra's Algorithm}
+
+\newpage
+%-----------------------------------------------------------------------------------%
+
+%Sorting Algorithms%
+\section{Sorting Algorithms}
+%--Bubble Sort--%
+\subsection{Bubble Sort}
+Understand algorithm, prove correctness, time complexity 
+\newpage
+%-----------------------------------------------------------------------------------%
+%--Selection Sort--%
+\subsection{Selection Sort}
+Understand algorithm, prove correctness, time complexity 
+\newpage
+%-----------------------------------------------------------------------------------%
+%--Insertion Sort--%
+\subsection{Insertion Sort}
+Understand algorithm, prove correctness, time complexity 
+\newpage
+%-----------------------------------------------------------------------------------%
+%--Heap Sort--%
+\subsection{Heap Sort}
+Understand algorithm, prove correctness, time complexity 
+\newpage
+%-----------------------------------------------------------------------------------%
+%Advanced Sorting Algorithms
+\section{Advanced Sorting Algorithms}
+%--Merge Sort--%
+\subsection{Merge Sort}
+Understand algorithm, prove correctness, time complexity 
+\newpage
+%-----------------------------------------------------------------------------------%
+%--Quick Sort--%
+\subsection{Quick Sort}
+Understand algorithm, prove correctness, time complexity 
+\newpage
+%-----------------------------------------------------------------------------------%
+
+%Searching%
+\section{Searching}
+%--Linear Search--%
+\subsection{Linear Search}
+Algorithm, prove correctness, time complexity
+\newpage
+%-----------------------------------------------------------------------------------%
+%--Binary Search--%
+\subsection{Binary Search}
+Algorithm, prove correctness, time complexity
+\newpage
+%-----------------------------------------------------------------------------------%
+
+%Graph Traversal%
+\section{Graph Traversal}
+%--Depth-first Search--%
+\subsection{Depth-First Search}
+Develop algorithm, prove correctness, analyze time complexity, applications
+\newpage
+%-----------------------------------------------------------------------------------%
+%--Breadth-first Search--%
+\subsection{Breadth-First Search}
+Develop algorithm, prove correctness, analyze time complexity, applications
+\newpage
+%-----------------------------------------------------------------------------------%
+
 %%%%%%%%%%%%%%% DELETE %%%%%%%%%%%%%%%
 % Methods
 \section{Methods}
