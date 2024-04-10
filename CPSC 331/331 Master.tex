@@ -271,6 +271,19 @@ A heap is a \textbf{complete} binary tree that satisfies the Heap Property:
         \item Root of any subtree has the \textit{maximum} value in the subtree
     \end{itemize}
     GIVE EXAMPLE
+    \item \textbf{Child-to-Parent Relation}
+    \begin{itemize}
+        \item Given a \textbf{child} a location \textit{loc}, what is the index of \textbf{parent} \textit{parent}?
+        \item If Child is right, index is \textbf{even}
+        \begin{itemize}
+            \item $loc_r = 2 \times parent + 2$
+        \end{itemize} 
+        \item If Child is left, index is \textbf{odd}
+        \begin{itemize}
+            \item $loc_l = 2 \times parent + 1$
+        \end{itemize}
+        \item In either cases, $parent = (loc - 1) \div 2$
+    \end{itemize}
 \end{itemize}
 
 %----MaxHeap Class----%
@@ -295,9 +308,11 @@ Similar to the Queue ADT, differences in the enqueue and dequeue functions to ma
     // enqueue()/dequeue() functions shown later
 \end{lstlisting}
 
+\newpage
 %----Enqueue----%
+\subsubsection{Insertion}
 \begin{definition}
-    \textit{Enqueue}
+    Inserting an element
     \begin{itemize}
         \item Must keep the tree \textbf{complete}
         \item Must keep the \textbf{max heap} property
@@ -308,7 +323,7 @@ Similar to the Queue ADT, differences in the enqueue and dequeue functions to ma
             \item Hence, \textbf{enqueue} is $O(\log(n))$
         \end{itemize}
     \end{itemize}
-    \newpage
+
     Enqueue:
     \begin{lstlisting}
         public void enqueue(T item) {
@@ -330,10 +345,11 @@ Similar to the Queue ADT, differences in the enqueue and dequeue functions to ma
         
     \end{proof}
 \end{definition}
-
+\newpage
 %----Dequeue----%
+\subsubsection{Deletion}
 \begin{definition}
-    \textit{Dequeue}
+    Deleting an element
     \begin{itemize}
         \item Must keep the tree \textbf{complete}
         \item Must keep the \textbf{max heap} property 
@@ -344,7 +360,7 @@ Similar to the Queue ADT, differences in the enqueue and dequeue functions to ma
             \item Hence, \textbf{dequeue} is $O(\log(n))$
         \end{itemize}
     \end{itemize}
-    \textit{Dequeue}:
+    \textit{Dequeue}
     \begin{lstlisting}
         public T dequeue() {
             T max = queue[0];
