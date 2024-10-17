@@ -2,7 +2,6 @@
 \input{structure.tex}
 \begin{document}
 
-
 \section*{RegEx}
 Format:
 \begin{enumerate}
@@ -95,5 +94,28 @@ Format:
         \item $S_3=\{q_0,q_1,q_2\}$ corresponds to $\hat{q_3}$, and $S_0\cap F=\{q_0,q_1,q_2\}\cap\{q_2\}=\hat{\{q_2\}}\neq\emptyset,\hat{q_3}\in\hat{F}$
     \end{itemize}
     Thus, $\hat{F}=\{\hat{q_2},\hat{q_3}\}$. Final DFA:
+\end{itemize}
+\subsection*{Non-regular languages}
+\textbf{Claim:} \\
+\textit{Proof by Contradiction.}
+\begin{itemize}
+    \item Suppose that \textit{L} is a regular language. It follows by the pumping lemma that there exists a positive int \textit{p}, that for every string
+    $s\in\Sigma^\star$ such that $s\in L$ and $|s|\geq p$, there exists string $x,y,z \in\Sigma^\star$ such that $s=xyz$ and the following properties are 
+    satisfied:
+    \begin{enumerate}
+        \item $xy^iz\in L$ for every int $i$ such that $i\geq0$. 2. $y>0$ (so $y\neq\lambda$). 3. $|xy|\leq p$
+    \end{enumerate}
+    \item Let $s=a^k$, where $k=2^p$. Then $s\in L$, since $|s|=k=2^p=2^l$ for int $l=p$, and $|s|=2^p\geq p$. It follows that there exists strings 
+    $x,y,z\in\Sigma^\star$ such that $s=xyz$ and properties 1, 2, 3 are all satisfied.
+    \begin{itemize}
+        \item Property 3: $|xy|=h$ for some int h such that $0\leq h\leq p$. Since $s=xyz=a^{(2^p)}$, $xy$ is the prefix, $a^h$, of len $h$ - 
+        and $z=a^{(2^p-h)}$ is the suffix, $a^{(2^p-h)}$, of $s$ with len $2^p-h$
+        \item Property 2: $|y|>0$, so that $|y|=l$ for some int $l$ such that $1\leq l  |y|\leq |xy|=h$. Furthermore, $y$ is the suffix, $a^l$, of 
+        $xy$ with len $l$ - and $x=a^{h-l}$ is the prefix, $a^{h-l}$, of $xy$ with len $|xy|-|y|=h-l$
+    \end{itemize}
+    In summary, $x=a^{a-l},y=a^l,z=a^{(2^p-h)}$
+    \begin{itemize}
+        \item Property 1: Let $i=1$. Then, it follows by above that string $xy^iz=xy^2z$ is also in the language $l$.
+    \end{itemize}
 \end{itemize}
 \end{document}
