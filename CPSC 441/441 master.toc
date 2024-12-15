@@ -1,0 +1,31 @@
+\contentsline {section}{\numberline {1}Chapter 3: Transport Layer}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}TCP}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Chapter 4: Network Layer (Data Plane)}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Router}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Internet Protocol (IP)}{7}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Subnets}{7}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}DHCP}{9}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}NAT}{10}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}IPv4}{11}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.5}IPv6}{11}{subsubsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.3}Generalized Forwarding and Software-Defined Networking}{13}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Chapter 5: Network Layer (Control Plane)}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Routing Algorithms}{14}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Link State: Dijkstra Algorithm}{15}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Distance Vector (DV): Bellman-Ford Equation}{15}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Conclusion between LS and DV}{16}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Intra-AS Routing}{17}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Open Shortest Path First (OSPF)}{17}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}Inter-AS Routing}{18}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Border Gateway Protocol (BGP)}{18}{subsubsection.3.3.1}%
+\contentsline {section}{\numberline {4}Chapter 6: Link Layer}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Overview}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Error Detection and Correction (EDC)}{22}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}MAC Protocols}{25}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Channel Partitioning}{25}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Random Access}{26}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Taking turns}{30}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Local Area Networks (LAN)}{32}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Addressing}{32}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Ethernet and Switches}{34}{subsubsection.4.4.2}%
+\contentsfinish 
