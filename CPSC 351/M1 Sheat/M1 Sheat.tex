@@ -2,7 +2,6 @@
 \input{structure.tex}
 \begin{document}
 
-
 \section*{RegEx}
 Format:
 \begin{enumerate}
@@ -23,12 +22,35 @@ Format:
 \end{enumerate}
 
 \section*{DFA}
+To recognize this language, the DFA needs to remember cases to hold $\omega\in\Sigma^\star$: \\
+List cases (e.g. \{$S_0=\omega\in\Sigma\star|\omega$ does not include an "a's"\}; corresponds to state $q_0$)
 \subsection*{Sanity Check 1: If it has a finite number of subsets}
+List subsets (e.g. $S_0, S_{od},S_{ev}$)
 \subsection*{Sanity Check 2: Every string belongs to \textbf{exactly one} subset}
-\subsection*{Sanity Check 3: }
-\subsection*{Sanity Check 4}
+e.g. Every string must include some fixed number of "a's". Zero $(\omega\in S_0)$, odd $(\omega\in S_{od})$, or at least two and even $(\omega\in S_{ev})$.
+Cannot be in more than one of these sets simultaneously: $S_0\cap S_{od}=S_0\cap S_{ev}=S_{od}\cap S_{ev}=\emptyset$
+\subsection*{Sanity Check 3: If states are described as above\dots}
+e.g. Then, $S_0\cap L=S_{od}\cap L=\emptyset$, while $S_{ev}\subseteq L$. From this, it follows that $q_{ev}$ is an accepting state, 
+hence, $q_{ev}\in F$
+\subsection*{Sanity Check 4: Transitions must be well-defined}
+e.g. Transitions out of each are as follows:
+\begin{itemize}
+    \item Number of "b's" and "c's" don't change the number of "a's" we need:
+    \begin{itemize}
+        \item $\{\omega\cdot b|\omega\in S_0\}\subseteq S_0$, $\{\omega\cdot c|\omega\in S_0\}\subseteq S_0$
+        \item (Same idea for sets $S_{od},S_{ev}$)
+    \end{itemize}
+    Thus, retained in the same state.
+    \item Number of "a's" change when you add an "a":
+    \begin{itemize}
+        \item Zero to one: $\{\omega\cdot a|\omega\in S_0\}\subseteq S_{od}$, well-defined transition from $q_0\rightarrow q_{od}$ for "a"
+        \item One to at least two: $\{\omega\cdot a|\omega\in S_{od}\}\subseteq S_{ev}$, well-defined transition from $q_{od}\rightarrow q_{ev}$ for "a"
+        \item Even number to odd that is at least two: $\{\omega\cdot a|\omega\in S_{ev}\}\subseteq S_{od}$, well-defined transition from $q_{ev}\rightarrow q_{od}$ for "a"
+    \end{itemize}
+\end{itemize}
+All sanity checks passed, we know that $S_0$ is the same as $\{\omega\in\Sigma^\star|\delta^\star(q_0,\omega)=q_0\}$ (Same for others), where $S_0,\dots$ are
+the sets of strings described at the beginning of this answer. Since $F=\{q_{ev}\}, L=S_{ev}$ is the language of this DFA - as desired.
 
-\newpage
 \section*{DFA NFA Equivalence}
 Format:
 \begin{enumerate}
@@ -36,20 +58,20 @@ Format:
     Our current DFA: (Drawing of DFA w/ start state) \\
     We pick $\hat{q_0}$ since it's the only state in $\hat{R}$ so far:
     \begin{enumerate}
-        \item Transitions out for $\omega=a$ for $\hat{q_0}$
-        $$\bigcup_{r\in S_0}\bigcup_{s\in\delta(r,a)}Cl\lambda(s)=\bigcup_{r\in \{q_0\}}\bigcup_{s\in\delta(r,a)}Cl\lambda(s)$$ 
-        $$=\bigcup_{s\in\delta(q_0,a)}Cl\lambda(s)$$
-        $$=\bigcup_{s\in\{q_0\}}Cl\lambda(s)$$
-        $$=Cl\lambda(q_0)$$
-        $$=\{q_0\} = S_0$$
+        \item Transitions out for $\omega=a$ for $\hat{q_0}$ \\
+        $\bigcup_{r\in S_0}\bigcup_{s\in\delta(r,a)}Cl\lambda(s)=\bigcup_{r\in \{q_0\}}\bigcup_{s\in\delta(r,a)}Cl\lambda(s)$ \\
+        $=\bigcup_{s\in\delta(q_0,a)}Cl\lambda(s)$ \\
+        $=\bigcup_{s\in\{q_0\}}Cl\lambda(s)$ \\
+        $=Cl\lambda(q_0)$ \\
+        $=\{q_0\} = S_0$ \\
         Same as $S_0$, corresponding to state $\hat{q_0}$. Thus, $\hat{\delta}(\hat{q_0},a)=\hat{q_0}$
         \item Transitions out for $\omega=b$ for $\hat{q_0}$ (Same outcome as $\omega=a$)
-        \item Transitions out for $\omega=c$ for $\hat{q_0}$
-        $$\bigcup_{r\in S_0}\bigcup_{s\in\delta(r,c)}Cl\lambda(s)=\bigcup_{r\in \{q_0\}}\bigcup_{s\in\delta(r,c)}Cl\lambda(s)$$ 
-        $$=\bigcup_{s\in\delta(q_0,c)}Cl\lambda(s)$$
-        $$=\bigcup_{s\in\{q_0,q_1\}}Cl\lambda(s)$$
-        $$=Cl\lambda(q_0)\cup Cl\lambda(q_1)$$
-        $$=\{q_0\}\cup\{q_1\}=\{q_0,q_1\}$$
+        \item Transitions out for $\omega=c$ for $\hat{q_0}$ \\
+        $\bigcup_{r\in S_0}\bigcup_{s\in\delta(r,c)}Cl\lambda(s)=\bigcup_{r\in \{q_0\}}\bigcup_{s\in\delta(r,c)}Cl\lambda(s)$ \\
+        $=\bigcup_{s\in\delta(q_0,c)}Cl\lambda(s)$ \\
+        $=\bigcup_{s\in\{q_0,q_1\}}Cl\lambda(s)$ \\
+        $=Cl\lambda(q_0)\cup Cl\lambda(q_1)$ \\
+        $=\{q_0\}\cup\{q_1\}=\{q_0,q_1\}$ \\
         This set does not correspond to any states in $\hat{Q}\cup\hat{R}$, so it will be a new set $S_1=\{q_0,q_1\}$ corresponding to the state
         $\hat{q_1}$.
     \end{enumerate}
@@ -72,5 +94,28 @@ Format:
         \item $S_3=\{q_0,q_1,q_2\}$ corresponds to $\hat{q_3}$, and $S_0\cap F=\{q_0,q_1,q_2\}\cap\{q_2\}=\hat{\{q_2\}}\neq\emptyset,\hat{q_3}\in\hat{F}$
     \end{itemize}
     Thus, $\hat{F}=\{\hat{q_2},\hat{q_3}\}$. Final DFA:
+\end{itemize}
+\subsection*{Non-regular languages}
+\textbf{Claim:} \\
+\textit{Proof by Contradiction.}
+\begin{itemize}
+    \item Suppose that \textit{L} is a regular language. It follows by the pumping lemma that there exists a positive int \textit{p}, that for every string
+    $s\in\Sigma^\star$ such that $s\in L$ and $|s|\geq p$, there exists string $x,y,z \in\Sigma^\star$ such that $s=xyz$ and the following properties are 
+    satisfied:
+    \begin{enumerate}
+        \item $xy^iz\in L$ for every int $i$ such that $i\geq0$. 2. $y>0$ (so $y\neq\lambda$). 3. $|xy|\leq p$
+    \end{enumerate}
+    \item Let $s=a^k$, where $k=2^p$. Then $s\in L$, since $|s|=k=2^p=2^l$ for int $l=p$, and $|s|=2^p\geq p$. It follows that there exists strings 
+    $x,y,z\in\Sigma^\star$ such that $s=xyz$ and properties 1, 2, 3 are all satisfied.
+    \begin{itemize}
+        \item Property 3: $|xy|=h$ for some int h such that $0\leq h\leq p$. Since $s=xyz=a^{(2^p)}$, $xy$ is the prefix, $a^h$, of len $h$ - 
+        and $z=a^{(2^p-h)}$ is the suffix, $a^{(2^p-h)}$, of $s$ with len $2^p-h$
+        \item Property 2: $|y|>0$, so that $|y|=l$ for some int $l$ such that $1\leq l  |y|\leq |xy|=h$. Furthermore, $y$ is the suffix, $a^l$, of 
+        $xy$ with len $l$ - and $x=a^{h-l}$ is the prefix, $a^{h-l}$, of $xy$ with len $|xy|-|y|=h-l$
+    \end{itemize}
+    In summary, $x=a^{a-l},y=a^l,z=a^{(2^p-h)}$
+    \begin{itemize}
+        \item Property 1: Let $i=1$. Then, it follows by above that string $xy^iz=xy^2z$ is also in the language $l$.
+    \end{itemize}
 \end{itemize}
 \end{document}
